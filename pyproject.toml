@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "celery-redis-priority-test"
+version = "0.1.0"
+description = ""
+authors = ["ATTY Lionel <lionel.atty@365talents.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+celery = {extras = ["redis"], version = "^4.4.7"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

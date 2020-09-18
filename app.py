@@ -5,8 +5,8 @@ from kombu import Queue, Exchange
 app_name = "priority-test"
 app = Celery(app_name)
 
-app.conf.result_backend = "redis://dev:dev@localhost:6379"
-app.conf.broker_url = "redis://dev:dev@localhost:6379"
+app.conf.result_backend = "redis://localhost:6379"
+app.conf.broker_url = "redis://localhost:6379"
 
 app.conf.task_default_queue = "b-medium"
 
